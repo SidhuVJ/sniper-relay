@@ -80,8 +80,9 @@ async def tv_alert(request: Request):
         ]
     }
     async with httpx.AsyncClient(timeout=10) as client:
-        await client.post(DISCORD_WEBHOOK, json={"embeds": [embed]})
+        await client.post(https://sniper-relay-l7x5.onrender.com/, json={"embeds": [embed]})
     return {"ok": True}
 
 # keep existing __main__ uvicorn run block you added
+
 
